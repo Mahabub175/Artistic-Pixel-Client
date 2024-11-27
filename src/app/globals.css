@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  @apply bg-black text-white overflow-x-hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1 !important;
+  border-radius: 50px !important;
+}
+
+.ant-form-item-label {
+  font-weight: 700 !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+
+.ant-menu-submenu-selected {
+  .ant-menu-submenu-title {
+    background-color: #ed0e64;
+    color: #0f0e0e;
+  }
+}
+
+.ant-menu-submenu-open {
+  .ant-menu-submenu-title {
+    background-color: #ed0e64;
+    color: rgb(4, 4, 4) !important;
+  }
+}
+
+.ant-menu-submenu-active {
+  .ant-menu-submenu-title {
+    background-color: #ed0e64;
+    color: rgb(5, 5, 5);
+  }
+}
+
+.ant-layout .ant-layout-sider {
+  background-color: rgba(67, 67, 67, 0) !important;
+}
+
+.ant-menu-light {
+  background-color: rgba(64, 64, 64, 0) !important;
+}
+
+.ant-menu-item {
+  color: #fff !important;
+}
+
+.ant-menu .ant-menu-item-selected {
+  color: #0f0e0e !important;
+}
+.ant-menu .ant-menu-item-active {
+  color: #0f0e0e !important;
+}
+
+.ant-pagination.ant-pagination-simple .ant-pagination-item-link {
+  color: #fff !important;
+}
+
+.ant-pagination.ant-pagination-simple .ant-pagination-simple-pager {
+  color: #a5a5a5 !important;
+}
+
+.ant-table-wrapper table {
+  overflow-x: auto !important;
+}
+
+.two-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
+}
+.three-grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+
+.cancel-button {
+  @apply font-bold w-full bg-transparent text-red-500 px-10 pt-2 pb-8 border border-red-500;
+}
+
+@layer components {
+  .btn-blue {
+    @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-sky-300
+    font-medium rounded-full text-sm px-5 py-2 text-center mx-1;
+  }
+  .btn-danger {
+    @apply text-white bg-gradient-to-r from-rose-500 to-red-700 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-red-300
+    font-medium rounded-full text-sm px-5 py-2 text-center mx-1 disabled:text-gray-700;
+  }
+}
+
+.ant-menu-submenu > .ant-menu-submenu-title {
+  color: #fff;
+}
+
+.ant-menu-submenu-active .ant-menu-submenu-title {
+  background-color: #fff !important;
+  color: rgb(5, 5, 5) !important;
+}
+.ant-menu-submenu-open .ant-menu-submenu-title {
+  background-color: #fff !important;
+  color: rgb(5, 5, 5) !important;
+}

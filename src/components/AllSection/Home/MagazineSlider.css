@@ -1,0 +1,14 @@
+.slick-center .center-img {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.center-img {
+  opacity: 0.5;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.slick-arrow slick-prev {
+  display: none !important;
+}
