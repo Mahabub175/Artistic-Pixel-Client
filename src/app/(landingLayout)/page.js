@@ -1,4 +1,5 @@
 import Banner from "@/components/AllSection/Home/Banner";
+import Services from "@/components/AllSection/Home/Services";
 
 export const metadata = {
   title: "Home | Artistic Pixel",
@@ -9,6 +10,7 @@ const page = async () => {
   return (
     <>
       <Banner />
+      <Services />
     </>
   );
 };

@@ -136,7 +136,7 @@ const Navbar = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center gap-4 py-3 lg:py-4">
+      <div className="container mx-auto px-5 flex justify-between items-center gap-4 py-3 lg:py-4">
         <Link href="/" className="w-auto hidden lg:block">
           <Image
             src={logo}
@@ -146,6 +146,7 @@ const Navbar = () => {
             onClick={() => {
               setCurrent("home");
             }}
+            className="-ml-5"
           />
         </Link>
         <Link href="/" className="w-auto lg:hidden">
