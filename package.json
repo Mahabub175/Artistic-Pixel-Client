@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "export": "next build & next export"
   },
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.0",
     "@emailjs/browser": "^4.4.1",
+    "@next/third-parties": "^15.1.4",
     "@reduxjs/toolkit": "^2.2.7",
     "antd": "^5.19.1",
     "browser-image-compression": "^2.0.2",

@@ -17,9 +17,23 @@ module.exports = {
         },
       },
       colors: {
-        primary: "#fff",
+        primary: "#FF6600",
         textColor: "#232323",
         light: "#f8edf6",
+      },
+      keyframes: {
+        fadeOutLeftToRight: {
+          "0%": { backgroundPosition: "0% 0%" },
+          "100%": { backgroundPosition: "100% 0%" },
+        },
+        fadeInRightToLeft: {
+          "0%": { backgroundPosition: "100% 0%" },
+          "100%": { backgroundPosition: "0% 0%" },
+        },
+      },
+      animation: {
+        fadeOutLeftToRight: "fadeOutLeftToRight 0.3s ease-in-out forwards",
+        fadeInRightToLeft: "fadeInRightToLeft 0.3s ease-in-out forwards",
       },
     },
   },

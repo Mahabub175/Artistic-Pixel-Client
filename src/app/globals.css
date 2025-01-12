@@ -9,9 +9,9 @@
 }
 
 body {
-  @apply bg-black text-white overflow-x-hidden;
+  background: linear-gradient(to right, #f6f6f6, #e9e9e9);
+  overflow-x: hidden;
 }
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -23,6 +23,45 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #f1f1f1 !important;
   border-radius: 50px !important;
+}
+
+@layer components {
+  .hover-fade {
+    background: linear-gradient(to right, #ff6600 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .hover-fade:hover {
+    background-position: -100% 0%;
+    color: #ff6600;
+  }
+}
+
+.ant-menu-submenu-selected {
+  .ant-menu-submenu-title {
+    background-color: #ff6600;
+    color: #fff;
+  }
+}
+
+.ant-menu-submenu-open {
+  .ant-menu-submenu-title {
+    background-color: #ff6600;
+    color: white !important;
+  }
+}
+
+.ant-menu-submenu-active {
+  .ant-menu-submenu-title {
+    background-color: #ff6600;
+    color: white;
+  }
+}
+
+li {
+  margin-left: 30px;
 }
 
 .ant-form-item-label {
