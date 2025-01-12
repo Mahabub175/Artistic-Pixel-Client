@@ -1,4 +1,5 @@
 import Banner from "@/components/AllSection/Home/Banner";
+import Counter from "@/components/AllSection/Home/Counter";
 import Services from "@/components/AllSection/Home/Services";
 
 export const metadata = {
@@ -11,6 +12,7 @@ const page = async () => {
     <>
       <Banner />
       <Services />
+      <Counter />
     </>
   );
 };

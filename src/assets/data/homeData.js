@@ -47,9 +47,9 @@ export const aboutUsData = {
 
 export const counterData = [
   { id: 1, name: "Projects Completed", count: "5500" },
-  { id: 2, name: "Hopeless Child", count: "500" },
+  { id: 2, name: "Services", count: "500" },
   { id: 3, name: "Team Member", count: "5" },
-  { id: 4, name: "Get Regards", count: "99" },
+  { id: 4, name: "Customers", count: "99" },
 ];
 
 export const homeFaqData = [
