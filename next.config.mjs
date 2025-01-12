@@ -9,6 +9,7 @@ const nextConfig = {
         pathname: "/upload/**",
       },
     ],
+    domains: ["infyfunding.nyc3.digitaloceanspaces.com"],
   },
 };
 

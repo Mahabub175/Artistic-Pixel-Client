@@ -7,7 +7,7 @@ const Services = () => {
       <div className="text-center">
         <p className="xl:text-xl">SERVICE</p>
         <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold mt-2">
-          Our Vison & Our Goal
+          Our Vision & Our Goal
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-center mt-20 text-center">

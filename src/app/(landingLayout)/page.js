@@ -1,6 +1,7 @@
 import Banner from "@/components/AllSection/Home/Banner";
 import Counter from "@/components/AllSection/Home/Counter";
 import Services from "@/components/AllSection/Home/Services";
+import Teams from "@/components/AllSection/Home/Teams";
 
 export const metadata = {
   title: "Home | Artistic Pixel",
@@ -13,6 +14,7 @@ const page = async () => {
       <Banner />
       <Services />
       <Counter />
+      <Teams />
     </>
   );
 };

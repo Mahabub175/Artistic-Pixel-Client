@@ -81,19 +81,19 @@ export const teamData = [
     image: "https://infyfunding.nyc3.digitaloceanspaces.com/91/team4.png",
   },
   {
-    id: 1,
+    id: 2,
     name: "Mr. John Thompson",
     designation: "Support Staff",
     image: "https://infyfunding.nyc3.digitaloceanspaces.com/90/team3.png",
   },
   {
-    id: 1,
+    id: 3,
     name: "Mrs. Dimassi Shatt",
     designation: "CEO",
     image: "https://infyfunding.nyc3.digitaloceanspaces.com/89/team2.png",
   },
   {
-    id: 1,
+    id: 4,
     name: "Mr. Salman Ahmad",
     designation: "Founder",
     image: "https://infyfunding.nyc3.digitaloceanspaces.com/88/team1.png",
