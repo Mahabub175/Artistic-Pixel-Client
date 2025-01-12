@@ -132,7 +132,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-white shadow z-50 fixed w-full transition-transform duration-300 ${
+      className={`bg-white shadow-md z-50 fixed w-full transition-transform duration-300 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >

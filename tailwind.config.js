@@ -21,6 +21,13 @@ module.exports = {
         textColor: "#232323",
         light: "#f8edf6",
       },
+      screens: {
+        sm: "580px",
+        md: "600px",
+        lg: "1280px",
+        xl: "1300px",
+        xxl: "1600px",
+      },
       keyframes: {
         fadeOutLeftToRight: {
           "0%": { backgroundPosition: "0% 0%" },
