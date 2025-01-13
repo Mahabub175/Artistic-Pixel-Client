@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Teams = () => {
   return (
-    <section className="container mx-auto px-5 mt-10 lg:mt-32 mb-44">
+    <section className="container mx-auto px-5 mt-10 lg:mt-32">
       <div className="text-center">
         <p className="xl:text-xl">OUR TEAM</p>
         <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold mt-2">

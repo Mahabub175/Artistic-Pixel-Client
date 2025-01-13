@@ -10,7 +10,7 @@ const Reviews = () => {
           What Clients say about us
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 justify-center mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 justify-center mt-20">
         {homeReviewData?.map((item) => (
           <div
             key={item?.id}

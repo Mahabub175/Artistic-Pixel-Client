@@ -1,5 +1,6 @@
 import Banner from "@/components/AllSection/Home/Banner";
 import Counter from "@/components/AllSection/Home/Counter";
+import NewsLetter from "@/components/AllSection/Home/NewsLetter";
 import Reviews from "@/components/AllSection/Home/Reviews";
 import Services from "@/components/AllSection/Home/Services";
 import Teams from "@/components/AllSection/Home/Teams";
@@ -17,6 +18,7 @@ const page = async () => {
       <Counter />
       <Reviews />
       <Teams />
+      <NewsLetter />
     </>
   );
 };
