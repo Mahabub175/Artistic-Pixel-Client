@@ -8,6 +8,7 @@ const LandingLayout = ({ children }) => {
       <div className="min-h-[calc(100vh-350px)] pt-20 lg:pt-24 xl:pt-32">
         {children}
       </div>
+      <Footer />
     </>
   );
 };

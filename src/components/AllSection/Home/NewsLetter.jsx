@@ -4,7 +4,7 @@ import { Input } from "antd";
 
 const NewsLetter = () => {
   return (
-    <section className="container mx-auto px-5 mt-10 lg:mt-32 mb-44">
+    <section className="container mx-auto px-5 mt-10 lg:mt-32 mb-20">
       <div className="text-center">
         <p className="xl:text-xl">NEWSLETTER</p>
         <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold mt-2">
