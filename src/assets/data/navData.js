@@ -1,19 +1,18 @@
 export const menuItems = [
   { key: "home", label: "Home", href: "/" },
-  { key: "about_us", label: "About Us", href: "/about-us" },
   {
     key: "services",
     label: "Services",
     children: [
       {
-        key: "erp_solution",
-        label: "ERP Solution",
-        href: "/services/erp-solution",
+        key: "Digital_Marketing",
+        label: "Digital Marketing",
+        href: "/services/digital-marketing",
       },
       {
-        key: "management_software",
-        label: "Management Software",
-        href: "/services/management-software",
+        key: "Graphic_Designing",
+        label: "Graphic Designing",
+        href: "/services/graphic-designing",
       },
       {
         key: "web_development",
@@ -21,15 +20,14 @@ export const menuItems = [
         href: "/services/web-development",
       },
       {
-        key: "app_development",
-        label: "App Development",
-        href: "/services/app-development",
+        key: "Video_Editing",
+        label: "Video Editing",
+        href: "/services/video-editing",
       },
     ],
   },
-  { key: "our_team", label: "Our Team", href: "/our-team" },
-  { key: "products", label: "Products", href: "/products" },
-  { key: "career", label: "Career", href: "/career" },
-  { key: "blog", label: "Blog", href: "/blog" },
+  { key: "about_us", label: "About Us", href: "/about" },
+  { key: "portfolio", label: "Portfolio", href: "/portfolio" },
+  { key: "our_team", label: "Team", href: "/team" },
   { key: "contact", label: "Contact", href: "/contact" },
 ];
