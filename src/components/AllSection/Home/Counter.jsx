@@ -2,7 +2,7 @@ import { counterData } from "@/assets/data/homeData";
 
 const Counter = () => {
   return (
-    <div className="container mx-auto px-5 mt-10 lg:mt-32 mb-44 grid grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="container mx-auto px-5 mt-10 lg:mt-32 grid grid-cols-2 lg:grid-cols-4 gap-10">
       {counterData?.map((item) => (
         <div
           key={item?.id}

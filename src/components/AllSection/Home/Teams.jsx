@@ -14,7 +14,7 @@ const Teams = () => {
         {teamData?.slice(0, 4)?.map((item) => (
           <div
             key={item?.id}
-            className="text-center border rounded-xl mt-32 pb-4 group hover:shadow-lg cursor-pointer hover:border-primary duration-300 flex flex-col"
+            className="text-center border-2 rounded-xl mt-32 pb-4 group hover:shadow-lg cursor-pointer hover:border-primary duration-300 flex flex-col"
           >
             <div className="mx-auto">
               <Image

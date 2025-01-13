@@ -10,7 +10,7 @@ const Services = () => {
           Our Vision & Our Goal
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-center mt-20 text-center">
+      <div className="flex flex-wrap gap-10 justify-center mt-20 text-center">
         {serviceData?.map((item) => (
           <div
             key={item?.id}

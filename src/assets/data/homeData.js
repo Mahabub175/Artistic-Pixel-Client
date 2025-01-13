@@ -27,6 +27,14 @@ export const serviceData = [
     image: service3,
     to: "/services/erp-solution",
   },
+  {
+    id: 4,
+    name: "Web Development",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.",
+    image: service1,
+    to: "/services/erp-solution",
+  },
 ];
 
 export const aboutUsData = {
@@ -46,30 +54,45 @@ export const aboutUsData = {
 };
 
 export const counterData = [
-  { id: 1, name: "Projects Completed", count: "5500" },
-  { id: 2, name: "Services", count: "500" },
-  { id: 3, name: "Team Member", count: "5" },
-  { id: 4, name: "Customers", count: "99" },
+  { id: 1, name: "Projects Completed", count: "5500+" },
+  { id: 2, name: "Services", count: "500+" },
+  { id: 3, name: "Team Member", count: "5+" },
+  { id: 4, name: "Customers", count: "99+" },
 ];
 
-export const homeFaqData = [
+import client1 from "@/assets/images/home/client1.png";
+import client2 from "@/assets/images/home/client2.png";
+import client3 from "@/assets/images/home/client3.png";
+import client4 from "@/assets/images/home/client4.png";
+
+export const homeReviewData = [
   {
     id: 1,
-    question: "How do I withdraw funds from my campaign?",
-    answer:
-      "Once your Crowdfunding starts receiving online donations, you can easily request a withdrawal at any time. Withdrawing money does not affect the progress meter displayed on your campaign. Simply click ‘Withdraw’ while logged into your account and follow the instructions. You can withdraw your balance directly to your bank account. Bank transfers take 2-5 business days to arrive.",
+    quote:
+      "Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support",
+    name: "Rayhan Curran",
+    image: client1,
   },
   {
     id: 2,
-    question: "Can a friend withdraw the money I raise for them?",
-    answer:
-      "Yes. Crowdfunding makes it easy for another friend or family member to securely access the funds you have raised. Through Crowdfunding, they will receive direct access to the money you have raised",
+    quote:
+      "Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support",
+    name: "Rayhan Curran",
+    image: client2,
   },
   {
     id: 3,
-    question: "How will I receive the donated funds?",
-    answer:
-      "You can withdraw donation amount to your PayPal account or to your bank account.",
+    quote:
+      "Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support",
+    name: "Rayhan Curran",
+    image: client3,
+  },
+  {
+    id: 4,
+    quote:
+      "Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support",
+    name: "Rayhan Curran",
+    image: client4,
   },
 ];
 
