@@ -1,4 +1,5 @@
 import Banner from "@/components/AllSection/Home/Banner";
+import Brands from "@/components/AllSection/Home/Brands";
 import Counter from "@/components/AllSection/Home/Counter";
 import NewsLetter from "@/components/AllSection/Home/NewsLetter";
 import Reviews from "@/components/AllSection/Home/Reviews";
@@ -14,6 +15,7 @@ const page = async () => {
   return (
     <>
       <Banner />
+      <Brands />
       <Services />
       <Counter />
       <ConsultationBanner />
