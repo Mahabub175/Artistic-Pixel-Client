@@ -1,6 +1,7 @@
-import Image from "next/image";
 import news from "@/assets/images/home/news.png";
 import { Input } from "antd";
+import Image from "next/image";
+import { MdSend } from "react-icons/md";
 
 const NewsLetter = () => {
   return (
@@ -25,6 +26,7 @@ const NewsLetter = () => {
             size="large"
             className="w-full mt-10 py-3"
             type="email"
+            prefix={<MdSend className="text-primary -rotate-45" />}
           />
           <button className="bg-primary text-white mt-5 hover:text-primary hover:bg-transparent duration-300 font-medium px-16 py-2 rounded border-2 border-primary w-full">
             Subscribe Our Newsletter

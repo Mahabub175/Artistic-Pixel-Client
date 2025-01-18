@@ -54,10 +54,10 @@ export const aboutUsData = {
 };
 
 export const counterData = [
-  { id: 1, name: "Projects Completed", count: "5500+" },
-  { id: 2, name: "Services", count: "500+" },
+  { id: 1, name: "Projects Completed", count: "50+" },
+  { id: 2, name: "Services", count: "10+" },
   { id: 3, name: "Team Member", count: "5+" },
-  { id: 4, name: "Customers", count: "99+" },
+  { id: 4, name: "Customers", count: "60+" },
 ];
 
 import client1 from "@/assets/images/home/client1.png";

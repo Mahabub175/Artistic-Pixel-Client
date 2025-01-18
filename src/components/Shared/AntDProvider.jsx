@@ -1,11 +1,5 @@
-"use client";
-
 import { ConfigProvider } from "antd";
 import { Toaster } from "sonner";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import { persistor, store } from "@/redux/store";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const AntDProvider = ({ children }) => {
   return (
@@ -13,50 +7,38 @@ const AntDProvider = ({ children }) => {
       theme={{
         components: {
           Tabs: {
-            itemSelectedColor: "#fff",
-            itemActiveBg: "#fff",
-            itemHoverBg: "#fff",
-            itemHoverColor: "#fff",
-            inkBarColor: "#fff",
+            itemSelectedColor: "#5c159d",
+            itemActiveBg: "#5c159d",
+            itemHoverBg: "#5c159d",
+            itemHoverColor: "#5c159d",
+            inkBarColor: "#5c159d",
           },
           Menu: {
-            itemSelectedBg: "#fff",
+            itemSelectedBg: "#5c159d",
             itemSelectedColor: "#fff",
-            itemActiveBg: "#fff",
+            itemActiveBg: "#5c159d",
             itemActiveColor: "#fff",
-            itemHoverBg: "#fff",
+            itemHoverBg: "#5c159d",
             itemHoverColor: "#fff",
           },
           Input: {
-            // activeBorderColor: "#ebe7e8",
-            // hoverBorderColor: "#ebe7e8",
+            activeBorderColor: "#5c159d",
+            hoverBorderColor: "#5c159d",
           },
           Upload: {
-            colorPrimaryHover: "#1677ff",
-            colorPrimary: "#1677ff",
-          },
-          Progress: {
-            defaultColor: "#fff",
-          },
-          Table: {
-            rowHoverBg: "#ebe7e8",
-            rowSelectedBg: "#ebe7e8",
-            rowSelectedHoverBg: "#ebe7e8",
+            colorPrimaryHover: "#5c159d",
+            colorPrimary: "#5c159d",
           },
         },
         token: {
-          // colorPrimary: "#fff",
-          // colorBorder: "#ebe7e8",
-          // colorPrimaryBorder: "#fff",
+          colorPrimary: "#5c159d",
+          colorBorder: "#ebe7e8",
+          colorPrimaryBorder: "#5c159d",
         },
       }}
     >
       <Toaster closeButton duration={2000} richColors position="top-center" />
-      <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <AntdRegistry>{children}</AntdRegistry>
-        </PersistGate>
-      </Provider>
+      {children}
     </ConfigProvider>
   );
 };

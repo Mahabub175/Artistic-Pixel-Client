@@ -5,6 +5,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaQuoteRight } from "react-icons/fa";
 
 const Reviews = () => {
   const settings = {
@@ -55,6 +56,7 @@ const Reviews = () => {
                       height={80}
                     />
                     <div>
+                      <FaQuoteRight className="inline-flex text-xl" />
                       <h3 className="text-base font-medium">{item?.quote}</h3>
                       <p className="text-gray-500 mt-2">{item?.name}</p>
                     </div>
@@ -69,6 +71,7 @@ const Reviews = () => {
                         height={80}
                       />
                       <div>
+                        <FaQuoteRight className="inline-flex text-xl" />
                         <h3 className="text-base font-medium">
                           {nextItem?.quote}
                         </h3>

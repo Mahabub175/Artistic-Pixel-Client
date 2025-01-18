@@ -69,12 +69,6 @@ const Navbar = () => {
                     className="flex items-center gap-4 "
                     onClick={() => handleItemClick(subItem?.key)}
                   >
-                    <Image
-                      src={subItem?.image}
-                      width={20}
-                      height={20}
-                      alt="submenu"
-                    />
                     <span className={`block font-bold `}>{subItem?.label}</span>
                   </Link>
                 </Menu.Item>
@@ -168,7 +162,7 @@ const Navbar = () => {
           {renderMenuItems(menuItems)}
         </div>
         <div className=" hidden lg:block">
-          <Link href={"/lets-talk"}>
+          <Link href={"/consultation"}>
             <button className="bg-primary text-white w-36 font-bold px-4 py-2 rounded hover-fade border-2 border-primary">
               Consultation
             </button>
@@ -199,7 +193,7 @@ const Navbar = () => {
             }}
           />
         </div>
-        <Link href={"/lets-talk"} onClick={closeDrawer}>
+        <Link href={"/consultation"} onClick={closeDrawer}>
           <button className="bg-primary text-white font-bold px-16 py-3 rounded-xl border-2 border-primary hover-fade w-full">
             Consultation
           </button>
