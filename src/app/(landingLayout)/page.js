@@ -17,7 +17,6 @@ const page = async () => {
       <Services />
       <Counter />
       <Reviews />
-      <Teams />
       <NewsLetter />
     </>
   );
