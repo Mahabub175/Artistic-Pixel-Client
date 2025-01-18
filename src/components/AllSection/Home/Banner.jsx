@@ -2,6 +2,7 @@ import Image from "next/image";
 import banner from "@/assets/images/home/banner.png";
 import banner1 from "@/assets/images/home/banner1.png";
 import banner2 from "@/assets/images/home/banner2.png";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -15,12 +16,16 @@ const Banner = () => {
           digital creator. In has a after comment
         </p>
         <div className="flex flex-col lg:flex-row items-center gap-4 mt-10">
-          <button className="bg-primary text-white hover:text-primary hover:bg-transparent duration-300 font-bold px-16 py-3 rounded border-2 border-primary">
-            Get Started
-          </button>
-          <button className="bg-transparent text-primary hover:text-white hover:bg-primary duration-300 font-bold px-16 py-3 rounded border-2 border-primary">
-            Learn More
-          </button>
+          <Link href={"/consultation"}>
+            <button className="bg-primary text-white hover:text-primary hover:bg-transparent duration-300 font-bold px-16 py-3 rounded border-2 border-primary">
+              Get Started
+            </button>
+          </Link>
+          <Link href={"/about"}>
+            <button className="bg-transparent text-primary hover:text-white hover:bg-primary duration-300 font-bold px-16 py-3 rounded border-2 border-primary">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative mt-10 lg:mt-0">

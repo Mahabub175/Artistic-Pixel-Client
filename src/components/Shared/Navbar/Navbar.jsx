@@ -166,8 +166,8 @@ const Navbar = () => {
         <div className="desktopMenu hidden lg:flex lg:flex-wrap gap-4 w-full  justify-center items-center">
           {renderMenuItems(menuItems)}
         </div>
-        <div className=" hidden lg:block">
-          <Link href={"/lets-talk"}>
+        <div className="hidden lg:block">
+          <Link href={"/consultation"}>
             <button className="bg-primary text-white w-36 font-bold px-4 py-2 rounded-full hover-fade border-2 border-primary">
               Get Started
             </button>

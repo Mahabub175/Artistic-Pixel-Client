@@ -9,15 +9,16 @@ export const metadata = {
 
 const page = () => {
   return (
-    <section className="mt-10 px-5 mb-20">
-      <div className="flex justify-between items-center py-2 flex-col mt-6">
-        <div className="w-full flex flex-col items-center pb-4">
-          <h1 className="sm:text-5xl text-3xl tracking-normal font-bold">
-            Contact Us
-          </h1>
+    <section className="px-5 mb-20">
+      <div className="flex justify-between items-center flex-col">
+        <div className="text-center">
+          <p className="xl:text-xl">Contact Us</p>
+          <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold mt-2">
+            We are here at your service
+          </h2>
         </div>
       </div>
-      <div className="relative w-full container m-auto pt-6 flex flex-col lg:flex-row justify-between items-center gap-20">
+      <div className="relative w-full container m-auto pt-6 flex flex-col lg:flex-row justify-between items-center gap-20 mt-10">
         <Image src={contact} alt="contact" className="-mb-20 lg:mb-0" />
         <div className="w-full">
           <ContactForm />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Teams = () => {
   return (
-    <section className="container mx-auto px-5 mt-10 lg:mt-32">
+    <section className="container mx-auto px-5">
       <div className="text-center">
         <p className="xl:text-xl">OUR TEAM</p>
         <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold mt-2">
@@ -14,7 +14,7 @@ const Teams = () => {
         {teamData?.slice(0, 4)?.map((item) => (
           <div
             key={item?.id}
-            className="text-center border-2 rounded-xl mt-32 pb-4 group hover:shadow-lg cursor-pointer hover:border-primary duration-300 flex flex-col"
+            className="text-center border-2 border-primaryLight rounded-xl mt-32 pb-4 group hover:shadow-lg cursor-pointer hover:border-primary duration-300 flex flex-col"
           >
             <div className="mx-auto">
               <Image

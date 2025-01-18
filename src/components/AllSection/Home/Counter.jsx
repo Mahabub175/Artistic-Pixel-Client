@@ -13,7 +13,7 @@ const Counter = () => {
         {counterData?.map((item) => (
           <div
             key={item?.id}
-            className="text-center space-y-3 border-2 hover:border-primary duration-300 rounded-xl p-5"
+            className="text-center space-y-3 border-2 border-primaryLight hover:border-primary duration-300 rounded-xl p-5"
           >
             <h2 className="text-5xl font-bold">{item?.count}</h2>
             <div>
