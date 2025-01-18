@@ -3,6 +3,7 @@ import Counter from "@/components/AllSection/Home/Counter";
 import NewsLetter from "@/components/AllSection/Home/NewsLetter";
 import Reviews from "@/components/AllSection/Home/Reviews";
 import Services from "@/components/AllSection/Home/Services";
+import ConsultationBanner from "@/components/Shared/ConsultationBanner";
 
 export const metadata = {
   title: "Home | Artistic Pixel",
@@ -15,6 +16,7 @@ const page = async () => {
       <Banner />
       <Services />
       <Counter />
+      <ConsultationBanner />
       <Reviews />
       <NewsLetter />
     </>

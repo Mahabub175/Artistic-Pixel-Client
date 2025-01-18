@@ -1,6 +1,7 @@
 "use client";
 
 import { menuItems } from "@/assets/data/navData";
+import logo from "@/assets/images/logo.png";
 import { Drawer, Menu, Popover } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +10,6 @@ import { useEffect, useState } from "react";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { sendGTMEvent } from "@next/third-parties/google";
-import logo from "@/assets/images/logo.png";
 
 const Navbar = () => {
   const router = useRouter();
@@ -66,14 +66,16 @@ const Navbar = () => {
                 <Menu.Item key={subItem?.key}>
                   <Link
                     href={subItem?.href}
-                    className="flex items-center gap-4"
+                    className="flex items-center gap-4 "
                     onClick={() => handleItemClick(subItem?.key)}
                   >
-                    <span
-                      className={`block font-bold text-black hover:text-primary duration-300`}
-                    >
-                      {subItem?.label}
-                    </span>
+                    <Image
+                      src={subItem?.image}
+                      width={20}
+                      height={20}
+                      alt="submenu"
+                    />
+                    <span className={`block font-bold `}>{subItem?.label}</span>
                   </Link>
                 </Menu.Item>
               );
@@ -136,7 +138,7 @@ const Navbar = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto px-5 flex justify-between items-center gap-4 py-3 lg:py-4">
+      <div className="container mx-auto px-4 flex justify-between items-center gap-4 py-3 lg:py-4">
         <Link href="/" className="w-auto hidden lg:block">
           <Image
             src={logo}
@@ -146,7 +148,6 @@ const Navbar = () => {
             onClick={() => {
               setCurrent("home");
             }}
-            className="-ml-5"
           />
         </Link>
         <Link href="/" className="w-auto lg:hidden">
@@ -166,10 +167,10 @@ const Navbar = () => {
         <div className="desktopMenu hidden lg:flex lg:flex-wrap gap-4 w-full  justify-center items-center">
           {renderMenuItems(menuItems)}
         </div>
-        <div className="hidden lg:block">
-          <Link href={"/consultation"}>
-            <button className="bg-primary text-white w-36 font-bold px-4 py-2 rounded-full hover-fade border-2 border-primary">
-              Get Started
+        <div className=" hidden lg:block">
+          <Link href={"/lets-talk"}>
+            <button className="bg-primary text-white w-36 font-bold px-4 py-2 rounded hover-fade border-2 border-primary">
+              Consultation
             </button>
           </Link>
         </div>
@@ -200,7 +201,7 @@ const Navbar = () => {
         </div>
         <Link href={"/lets-talk"} onClick={closeDrawer}>
           <button className="bg-primary text-white font-bold px-16 py-3 rounded-xl border-2 border-primary hover-fade w-full">
-            Get Started
+            Consultation
           </button>
         </Link>
       </Drawer>
