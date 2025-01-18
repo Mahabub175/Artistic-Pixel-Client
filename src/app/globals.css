@@ -9,7 +9,8 @@
 }
 
 body {
-  background: linear-gradient(to right, #ebe0f6, #f2e7fc);
+  /* background: linear-gradient(to right, #ebe0f6, #f2e7fc); */
+  background: linear-gradient(to right, #e8e8e9, #f9f7fa);
   overflow-x: hidden;
 }
 
